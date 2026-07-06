@@ -38,10 +38,9 @@ ML coding module may or may not exist in particular companies interviews. The go
   - tf-idf
 
 ## Other 
-  - Random int in range ([link1](https://leetcode.com/discuss/interview-question/125347/generate-uniform-random-integer
-), [link2](https://leetcode.com/articles/implement-rand10-using-rand7/))
+  - Random int in range ([link1](https://leetcode.com/discuss/interview-question/125347/generate-uniform-random-integer/), [link2](https://leetcode.com/problems/implement-rand10-using-rand7/))
   - Triangle closing 
   - Meeting point  
 
 ## Sample codes
-- You can find some sample codes under the [Notebooks]().
+- You can find some sample codes under the [Notebooks](./notebooks/).
