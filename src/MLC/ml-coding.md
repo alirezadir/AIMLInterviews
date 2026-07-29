@@ -24,7 +24,9 @@ ML coding module may or may not exist in particular companies interviews. The go
   - Softmax ([code](./notebooks/softmax.ipynb))
   - Convolution ([code](./notebooks/convolution.ipynb))
   - CNN 
-  - RNN 
+  - RNN
+## ML Metrics 
+- tpr, fpr, confusion matrix, ROC AUC, etc
 
 ##  Sampling
   - stratified sampling ([link](https://towardsdatascience.com/the-5-sampling-algorithms-every-data-scientist-need-to-know-43c7bc11d17c))
