@@ -31,7 +31,7 @@ and [System design primer](https://github.com/donnemartin/system-design-primer).
 # 1. The 9-Step ML System Design Formula ([Template](./mlsd-template.md)) 
 
 In order to design a solid ML system for real world applications, it is important to follow a design flow.
-I recommend using the following **9-Step ML System Design Formula**to design SW system solutions for ML-relevant business problems both at work and during interviews:
+I recommend using the following **9-Step ML System Design Formula** to design SW system solutions for ML-relevant business problems both at work and during interviews:
 
 <!-- <p align="center">
 <img src="https://user-images.githubusercontent.com/5262877/219497742-f70eca2a-4338-4362-8a6a-ec83057a3230.png" title="" width="40%" height="40%">
