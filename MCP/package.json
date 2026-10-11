@@ -23,9 +23,10 @@
     "build": "npm run clean && tsc -p tsconfig.json",
     "clean": "rm -rf dist",
     "start": "node dist/src/index.js",
-    "test": "npm run build && node --test dist/test/*.test.js",
+    "test": "npm run build && node --test dist/test/*.test.js test/research.test.mjs",
     "prepack": "npm test",
-    "inspect": "npx @modelcontextprotocol/inspector node dist/src/index.js"
+    "inspect": "npx @modelcontextprotocol/inspector node dist/src/index.js",
+    "research": "node examples/research.mjs"
   },
   "keywords": [
     "mcp",

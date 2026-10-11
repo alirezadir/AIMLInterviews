@@ -51,6 +51,27 @@ The server searches its working directory and parent directories for the clone. 
 
 `AIMLINTERVIEWS_ROOT` must point to the repository root that contains `README.md` and `src/`.
 
+## Optional web research companion
+
+Use the [research example](examples/research.mjs) to find curriculum sections and related web reading with [Parallel Search MCP](https://docs.parallel.ai/integrations/mcp/search-mcp). It connects to the local tutor over stdio and to `https://search.parallel.ai/mcp` over Streamable HTTP. Anonymous search uses Fast mode and needs no account or API key; the free endpoint has rate limits.
+
+From your repository clone:
+
+```bash
+cd MCP
+npm ci
+npm run build
+npm run research -- "retrieval augmented generation"
+```
+
+To extract a specific reading page as well, pass its URL:
+
+```bash
+npm run research -- "retrieval augmented generation" "https://en.wikipedia.org/wiki/Retrieval-augmented_generation"
+```
+
+The example prints source-linked curriculum matches, web search results and, when requested, page excerpts as JSON. It calls MCP tools directly and does not run an LLM or an agent loop. Only the supplied topic and optional URL go to Parallel; it does not send candidate answers or local curriculum text. External pages can contain spoilers or untrusted instructions, so use them for background study rather than during a no-spoilers mock interview. The local tutor and its default client configuration stay unchanged.
+
 ## Tools
 
 | Tool | Purpose |
