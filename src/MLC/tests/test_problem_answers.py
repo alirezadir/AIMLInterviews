@@ -80,6 +80,23 @@ class ProblemAnswersTest(unittest.TestCase):
         self.assertAlmostEqual(split[1], 1.5)
         self.assertAlmostEqual(split[2], 0.0)
 
+    def test_best_gini_split_with_large_finite_features(self):
+        features = np.array([[1.0e308], [1.2e308]])
+        split = best_gini_split(features, np.array([0, 1]))
+        self.assertIsNotNone(split)
+        assert split is not None
+        self.assertTrue(np.isfinite(split[1]))
+        self.assertGreater(split[1], features[0, 0])
+        self.assertLess(split[1], features[1, 0])
+        self.assertAlmostEqual(split[2], 0.0)
+
+        crossing_zero = np.array([[-1.7e308], [1.7e308]])
+        crossing_split = best_gini_split(crossing_zero, np.array([0, 1]))
+        self.assertIsNotNone(crossing_split)
+        assert crossing_split is not None
+        self.assertTrue(np.isfinite(crossing_split[1]))
+        self.assertAlmostEqual(crossing_split[2], 0.0)
+
     def test_pca(self):
         x = np.array([[1.0, 1.0], [2.0, 2.0], [3.0, 3.0]])
         transformed, components, explained_variance = principal_component_analysis(x, 1)

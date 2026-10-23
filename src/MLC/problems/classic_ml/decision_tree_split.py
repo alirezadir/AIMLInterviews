@@ -35,7 +35,15 @@ def best_gini_split(
     best: tuple[int, float, float] | None = None
     for feature_index in range(x.shape[1]):
         unique_values = np.unique(x[:, feature_index])
-        thresholds = (unique_values[:-1] + unique_values[1:]) / 2.0
+        lower_values = unique_values[:-1]
+        upper_values = unique_values[1:]
+        with np.errstate(over="ignore"):
+            gaps = upper_values - lower_values
+            thresholds = lower_values + gaps / 2.0
+        overflowed = ~np.isfinite(thresholds)
+        thresholds[overflowed] = (
+            lower_values[overflowed] / 2.0 + upper_values[overflowed] / 2.0
+        )
         for threshold in thresholds:
             left = x[:, feature_index] <= threshold
             if left.all() or (~left).all():
