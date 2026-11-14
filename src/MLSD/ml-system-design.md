@@ -20,7 +20,7 @@ Deploying deep learning models in production can be challenging, and it is beyon
 
 Approaching an ML system design problem follows a similar logical flow to the generic software system design. (
 For more insight on general system design interview you can e.g. check out [Grokking the System Design Interview
-](https://www.educative.io/courses/grokking-the-system-design-interview)
+](https://www.designgurus.io/course/grokking-the-system-design-interview)
 and [System design primer](https://github.com/donnemartin/system-design-primer).). However, there are certain components in the design of an ML based system that needs to be addressed and need special attention, as you will see below in ML System Design Flow.
 
 ### ML System Design Interview 
