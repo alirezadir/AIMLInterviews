@@ -18,7 +18,7 @@
 </p>
 
 
-机器学习系统设计问题与通用软件系统设计的思考路径相似。如果你想进一步了解通用系统设计面试，可以参考 [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview) 和 [System Design Primer](https://github.com/donnemartin/system-design-primer)。不过，设计机器学习系统时还必须单独考虑并重点关注一些特定组件，具体如下文的机器学习系统设计流程所示。
+机器学习系统设计问题与通用软件系统设计的思考路径相似。如果你想进一步了解通用系统设计面试，可以参考 [Grokking the System Design Interview](https://www.designgurus.io/course/grokking-the-system-design-interview) 和 [System Design Primer](https://github.com/donnemartin/system-design-primer)。不过，设计机器学习系统时还必须单独考虑并重点关注一些特定组件，具体如下文的机器学习系统设计流程所示。
 
 ### 机器学习系统设计面试
 

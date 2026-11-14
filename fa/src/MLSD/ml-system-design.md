@@ -16,7 +16,7 @@
 <img src="../../../src/imgs/components.png" title="" width="90%" height="80%">
 </p>
 
-حل مسئلهٔ طراحی سیستم ML از نظر منطقی شبیه طراحی سیستم نرم‌افزاری عمومی است. برای مرور مبانی می‌توانید [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview) و [System Design Primer](https://github.com/donnemartin/system-design-primer) را ببینید.
+حل مسئلهٔ طراحی سیستم ML از نظر منطقی شبیه طراحی سیستم نرم‌افزاری عمومی است. برای مرور مبانی می‌توانید [Grokking the System Design Interview](https://www.designgurus.io/course/grokking-the-system-design-interview) و [System Design Primer](https://github.com/donnemartin/system-design-primer) را ببینید.
 
 با این حال، یک سیستم ML اجزایی دارد که به توجه ویژه نیاز دارند؛ از داده و feature تا آموزش، inference، ارزیابی و monitoring.
 
